@@ -51,8 +51,6 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_POST(self):
         if self.path == '/auth':
-            # Your authentication logic here
-            # You can decode and verify the JWT token here
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
